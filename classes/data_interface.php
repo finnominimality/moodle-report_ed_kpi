@@ -565,12 +565,12 @@ class data_interface {
         // S'il n'y a pas de date de début, comme pour les inscriptions via des programmes, le timestart sera à 0 et donc on exclut.
         // EDIT 20241205 - neoma-67 - add condition to get cohort enrolments.
         $enroledusers = $DB->get_records_sql('
-            SELECT ue.userid, min(timestart) as timestart
+            SELECT ue.userid, min(ue.timestart) as timestart
             FROM {user_enrolments} ue
             JOIN {enrol} e ON e.id = ue.enrolid
-            WHERE e.courseid = :courseid AND (timestart > 0 OR e.enrol = "cohort" )
+            WHERE e.courseid = :courseid AND (ue.timestart > 0 OR e.enrol = :cohort)
             GROUP BY ue.userid
-        ', ['courseid' => $course->id]);
+        ', ['courseid' => $course->id, 'cohort' => 'cohort']);
 
         if (!$enroledusers) {
             $this->learningsdata['course-' . $course->id] = [];

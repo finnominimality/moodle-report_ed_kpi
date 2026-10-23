@@ -101,7 +101,7 @@ if ($type == 'course') {
     $aggregatedata       = $datainterface->get_course_aggregated_data($learningdata);
     $monthaggregateddata = $datainterface->get_course_aggregated_data_by_month($learningdata);
 } else {
-    throw new moodle_exception('unreconizedlearningtype', 'report_ed_kpi');
+    throw new moodle_exception('unrecognizedlearningtype', 'report_ed_kpi');
 }
 
 // Output page.

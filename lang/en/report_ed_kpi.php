@@ -64,4 +64,5 @@ $string['positions']                     = 'Positions';
 $string['privacy:metadata']              = 'This plugin does not store any personal data.';
 $string['returntoall']                   = 'Return to all courses view';
 $string['summary-title']                 = 'Summary';
+$string['unrecognizedlearningtype']      = 'Unrecognized learning type';
 $string['users-table-title']             = 'Users';

@@ -64,4 +64,5 @@ $string['positions']                     = 'Posities';
 $string['privacy:metadata']              = 'Deze plugin slaat geen persoonlijke gegevens op.';
 $string['returntoall']                   = 'Terug naar het overzicht van alle opleidingen';
 $string['summary-title']                 = ' Overzicht ';
+$string['unrecognizedlearningtype']      = 'Onbekend trainingstype';
 $string['users-table-title']             = 'Gebruikers';

@@ -1,0 +1,85 @@
+.path-report-ed_kpi .global-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1025px) {
+    .path-report-ed_kpi .global-summary {
+        justify-content: center;
+    }
+
+    .path-report-ed_kpi .global-summary .filters-container {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1225px) {
+    body.drawer-open-left.path-report-ed_kpi .global-summary {
+        justify-content: center;
+    }
+
+    body.drawer-open-left.path-report-ed_kpi .global-summary .filters-container {
+        margin-bottom: 1rem;
+    }
+}
+
+
+.path-report-ed_kpi .learning-data {
+    display: flex;
+}
+
+.path-report-ed_kpi .summary-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.path-report-ed_kpi .summary-element .legend,
+.path-report-ed_kpi .chart-container .legend {
+    color: grey;
+}
+
+.path-report-ed_kpi .table-container,
+.path-report-ed_kpi .chart-container {
+    padding: 1.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 1rem;
+}
+
+.path-report-ed_kpi .table-container {
+    overflow: auto;
+}
+
+.path-report-ed_kpi .table-container .dt-buttons {
+    margin-bottom: 0.5rem;
+    text-align: right;
+}
+
+.path-report-ed_kpi .chart-container {
+    margin-bottom: 1rem;
+}
+
+.path-report-ed_kpi .chart-container canvas {
+    margin-top: 1rem;
+    max-height: 350px;
+}
+
+.path-report-ed_kpi .chart-container {
+    width: 49.5%;
+}
+
+.path-report-ed_kpi .charts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.path-report-ed_kpi .return-link {
+    margin-top: 1rem;
+    display: block;
+}
